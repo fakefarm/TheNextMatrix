@@ -1,0 +1,8 @@
+<h1>What happens next?</h1>
+<%= link_to "take the red pill", new_url %>
+<% @plot.each do |plot| %>
+  <ul>
+    <li><%= link_to plot.title, show_url(plot[:id]) %></li>
+  </ul>
+<% end %>
+
